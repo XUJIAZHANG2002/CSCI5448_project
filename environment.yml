@@ -1,0 +1,23 @@
+name: ml_env
+channels:
+  - conda-forge
+  - pytorch
+  - nvidia
+dependencies:
+  - python=3.12
+  # --- Core scientific stack ---
+  - tqdm
+  - numpy
+  - pandas
+  - ipython
+  - matplotlib
+  - scikit-learn
+  # --- PyTorch stack ---
+  - pytorch       # main library
+  - torchvision   # image utilities
+  - torchaudio    # audio utilities
+  - pytorch-cuda  # CUDA support
+  # --- TensorFlow stack ---
+  - tensorflow
+  - tensorflow-datasets
+  - tensorflow-hub
