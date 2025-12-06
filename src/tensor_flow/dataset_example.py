@@ -1,6 +1,6 @@
 import tensorflow as tf
 
-# Sample data
+
 x = tf.random.normal((1000, 32))
 y = tf.random.uniform((1000,), maxval=10, dtype=tf.int32)
 
@@ -14,5 +14,5 @@ dataset = (
 
 # Iterate
 for batch_x, batch_y in dataset:
-    # framework handles loading and batching internally
+    # framework handles loading and batching internally, much higher level encapsulation here
     print(batch_x.shape, batch_y.shape)

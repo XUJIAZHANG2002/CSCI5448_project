@@ -20,7 +20,6 @@ class CNNModel(tf.keras.Model):
         x = self.fc1(x)
         return self.fc2(x)
 
-# prepare and train
 (x_train, y_train), (x_test, y_test) = tf.keras.datasets.mnist.load_data()
 x_train = x_train[..., tf.newaxis] / 255.0
 x_test = x_test[..., tf.newaxis] / 255.0
