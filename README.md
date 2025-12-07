@@ -21,3 +21,20 @@ This repo contains documents and source code for the graduate project.
 - `src/` contains source code of example implementations.
     - `src/pytorch` contains coding example in PyTorch.
     - `src/tensor_flow` contains coding example in TensorFlow.
+
+## Run
+
+- Run example scripts by:
+  ```
+  python ./src/pytorch/dataset_example.py
+  python ./src/pytorch/mnist_cnn_classifier.py
+  python ./src/pytorch/resnet_50.py
+  python ./src/pytorch/transformer.py
+
+  python ./src/tensor_flow/dataset_example.py
+  python ./src/tensor_flow/mnist_cnn_classifier.py
+  python ./src/tensor_flow/resnet_50.py
+  python ./src/tensor_flow/transformer.py
+  ```
+
+- Or run all examples with thr provided shell script `./run_all.sh`.
