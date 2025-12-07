@@ -14,7 +14,7 @@ class MyDataset(Dataset):
 # Create dataset and loader
 dataset = MyDataset(torch.randn(1000, 32), torch.randint(0, 10, (1000,)))
 sampler = RandomSampler(dataset)
-loader = DataLoader(dataset, batch_size=32, sampler = sampler,shuffle=True, num_workers=2)
+loader = DataLoader(dataset, batch_size=32, sampler = sampler,shuffle=False, num_workers=2)
 
 
 for batch_x, batch_y in loader:

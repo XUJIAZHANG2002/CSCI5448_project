@@ -1,6 +1,5 @@
 import tensorflow as tf
 
-
 x = tf.random.normal((1000, 32))
 y = tf.random.uniform((1000,), maxval=10, dtype=tf.int32)
 
